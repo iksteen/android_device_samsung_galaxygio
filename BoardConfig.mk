@@ -19,7 +19,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/galaxygio/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/galaxygio/prebuilt/kernel
 
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
