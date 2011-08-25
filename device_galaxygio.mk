@@ -17,6 +17,11 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Add boot logo.
+PRODUCT_COPY_FILES += \
+    device/samsung/galaxygio/GIO.rle:root/GIO.rle \
+    device/samsung/galaxygio/GIO.rle:recovery/root/GIO.rle
+
 # Copy Samsung fsr / rfs modules.
 PRODUCT_COPY_FILES += \
     device/samsung/galaxygio/prebuilt/fsr.ko:root/lib/modules/fsr.ko \
