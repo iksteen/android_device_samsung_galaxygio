@@ -17,6 +17,14 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Copy Samsung fsr / rfs modules.
+PRODUCT_COPY_FILES += \
+    device/samsung/galaxygio/prebuilt/fsr.ko:root/lib/modules/fsr.ko \
+    device/samsung/galaxygio/prebuilt/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    device/samsung/galaxygio/prebuilt/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+    device/samsung/galaxygio/prebuilt/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+    device/samsung/galaxygio/prebuilt/sec_param.ko:root/lib/modules/sec_param.ko
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
