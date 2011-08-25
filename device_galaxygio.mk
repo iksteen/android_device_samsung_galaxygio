@@ -9,7 +9,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/galaxygio/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/samsung/galaxygio/kernel
+	LOCAL_KERNEL := device/samsung/galaxygio/prebuilt/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
