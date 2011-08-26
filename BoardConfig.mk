@@ -49,6 +49,7 @@ BOARD_BML_RECOVERY := /dev/block/bml9
 TARGET_USERIMAGES_USE_EXT4 := true
 
 TARGET_PREBUILT_KERNEL := device/samsung/galaxygio/prebuilt/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/galaxygio/prebuilt/recovery_kernel
 
 TARGET_PROVIDES_INIT := true
 TARGET_PROVIDES_INIT_TARGET_RC := true
